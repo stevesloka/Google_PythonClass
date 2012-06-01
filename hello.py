@@ -9,11 +9,15 @@ def Hello(name):
     name = name + ' yay!'
   print 'Hello', name
 
-
+def Cat(filename):
+  f = open(filename, 'rU')
+  text = f.read();
+  print text
+  f.close()
 
 #Define a main() function that prints a little greeting.
 def main():
-  Hello(sys.argv[1])
+  Cat(sys.argv[1])
  
 
 # this is the standard boilerplate that call the main() function.
